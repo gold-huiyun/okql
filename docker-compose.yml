@@ -1,18 +1,15 @@
-version: '2'
 services:
-  web:
-     public: true
-     container_name: qinglong
-     image: whyour/qinglong:latest
-     volumes:
-      - ./data:/ql/data
-    ports:
-        - 5700:5700
-     resources:
-       cpu: 1000m
-       memory: 2048Mi
-       storage:
-         size: 5Gi
-         class: standard
-    restart: unless-stopped
-
+    web:
+        public: true
+        container_name: qinglong
+        image: whyour/qinglong:latest
+        ports:
+            - 5700:5700
+        volumes: 
+            - /ql/data
+        resources:
+          cpu: 1000m
+          memory: 2050Mi
+          storage:
+            size: 5Gi
+            class: standard
