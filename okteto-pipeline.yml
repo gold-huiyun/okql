@@ -1,4 +1,4 @@
-icon: https://tzchzblob.vercel.app/about.jpg
+icon: https://z3.ax1x.com/2021/11/18/I7MpAe.png
 deploy:
   - okteto stack deploy --build -f docker-compose.yml
 devs:
